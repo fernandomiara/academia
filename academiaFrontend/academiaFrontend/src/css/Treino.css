@@ -1,0 +1,142 @@
+.treino-card {
+  border: 1px solid #007BFF;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 0.5rem;
+  cursor: pointer;
+  background-color: #f0f8ff;
+  transition: transform 0.2s ease;
+}
+.treino-card:hover {
+  transform: scale(1.03);
+}
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+}
+
+.treino-card-disponivel {
+  flex: 1 1 calc(33.333% - 1rem);
+  background-color: #e6f0ff;
+  border: 1px solid #007BFF;
+  border-radius: 6px;
+  padding: 0.8rem;
+  margin: 0.5rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.treino-card-disponivel:hover {
+  transform: scale(1.02);
+}
+
+.treino-card-disponivel h4 {
+  margin: 0 0 0.3rem;
+  font-size: 1rem;
+}
+
+.treino-card-disponivel small {
+  color: #555;
+}
+.treino-card-vinculado {
+  background-color: #ffffff;
+  border-left: 4px solid #007BFF;
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 0.7rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.treino-card-vinculado h3 {
+  margin: 0 0 0.5rem;
+}
+
+.quadroDisponivel {
+  flex: 1;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  border-radius: 6px;
+}
+
+.margin-esquerda-quadro {
+  margin-left: 0.5rem;
+}
+
+.margin-direita-quadro {
+  margin-right: 0.5rem;
+}
+
+.input-texto {
+  flex: 1;
+  padding: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.input-button-salvar{
+  padding: 0.5rem 1rem;
+  background-Color: #007BFF;
+  color: white;
+  border: none;
+  border-Radius: 4px;
+  cursor: pointer;
+}
+
+.input-button-limpar {
+  padding: 0.5rem 1rem;
+  background-Color: white;
+  color: #007BFF;
+  border: none;
+  border-Radius: 4px;
+  cursor: pointer;
+}
+
+.abas-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.25rem;
+  border-bottom: 2px solid #007BFF;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.aba {
+  background-color: #f1f1f1;
+  color: #333;
+  padding: 0.6rem 1.2rem;
+  border: 1px solid transparent;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.aba:hover {
+  background-color: #e1e1e1;
+}
+
+.aba.ativa {
+  background-color: white;
+  color: #007BFF;
+  border: 2px solid #007BFF;
+  border-bottom: none;
+  position: relative;
+  top: 2px;
+  z-index: 1;
+}
